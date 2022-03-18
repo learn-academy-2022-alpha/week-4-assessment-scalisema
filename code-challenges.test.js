@@ -16,18 +16,17 @@
 // a) Create a test with an expect statement using the variable provided. HINT: Check out this resource: https://jestjs.io/docs/expect#expectarraycontainingarray
 
 
-// describe("shuff", () => {
-
-const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-// Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
-const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
-// Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
-it("a function that takes in an array, removes the first item from the array and shuffles the remaining content.", () => {
-    expect(shuff(colors1).toEqual(["green", "yellow", "pink", "blue"]),
-        expect(shuff(colors2).toEqual(["periwinkle", "indigo", "aquamarine", "ochre"])
+describe("shuff", () => {
+    const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+    // Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
+    const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+    // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
+    it("a function that takes in an array, removes the first item from the array and shuffles the remaining content.", () => {
+        expect(shuff(colors1)).toEqual(expect.arrayContaining(["green", "yellow", "pink", "blue"])),
+            expect(shuff(colors2)).toEqual(expect.arrayContaining(["periwinkle", "indigo", "aquamarine", "ochre"]))
 
     })
- })
+})
 
 // b) Create the function that makes the test pass.
 // Came across while loops in researching this
@@ -54,9 +53,9 @@ describe("minmax", () => {
     const nums2 = [109, 5, 9, 67, 8, 24]
     //  Expected output: [5, 109]
     it("a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.", () => {
-        expect(minmax(nums1).toEqual([-8, 90]),
-            expect(minmax(nums2).toEqual([5, 109]),
-     })
+        expect(minmax(nums1)).toEqual([-8, 90]),
+            expect(minmax(nums2)).toEqual([5, 109])
+    })
 })
 
 
@@ -84,8 +83,8 @@ describe("nodup", () => {
     const testArray2 = [7, 8, 2, 3, 1, 5, 4]
     // Expected output: [3, 7, 10, 5, 4, 8, 2, 1]
     it("a function that takes in two arrays as arguments and returns one array with no duplicate values.", () => {
-        expect(nodup(testArray1, testArray2).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
-     })
+        expect(nodup(testArray1, testArray2)).toEqual([3, 7, 10, 5, 4, 8, 2, 1])
+    })
 })
 
 

@@ -9,26 +9,22 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: Props are the arguments in Recat.
 
-  Researched answer: Props are arguments passed into React components. Props are passed to components via HTML attributes. React Props are like function arguments in JavaScript and attributes in HTML.
+  Researched answer: Props are used to pass data to components in React. Props are short for properties. They are important because they allow react websites to be dynamic. Unlike state, props cannot be changed. 
 
 
 2. What is a DOM event?
 
-  Your answer: a DOM event is when in a React website the JSX elements load/reload/uipdate.
+  Your answer: a DOM event is when in a React website the JSX elements load/reload/update.
 
-  Researched answer: DOM events allow JavaScript to register different event handlers on elements in an HTML document. Events are normally used in combination with functions, and the function will not be executed before the event occurs (such as when a user clicks a button).
+  Researched answer: DOM events allow JavaScript to register different event handlers on elements in an HTML document. In simplier terms a DOM event happens when a website (useing React or someother framework that uses DOMs) needs to respond to a users actions such as clicking on a button or scrolling down the page. DOM events are normally used in combination with functions so that an event triggers a functions to run in responce to the event occuring.  An example of this is a user clicking a button.
   
   
-
-
 
 3. What is object-oriented programming? How is it different than functional programming?
 
   Your answer: OOP is programing where the developer relies on objects rather than hard code which is what fucational programing is based on. 
 
-  Researched answer: Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods. Functional programming is a programming paradigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
-
-
+  Researched answer: Object-oriented programming (OOP) is a style of programming which is based around and focused on the use of objects.  Objects are data structures. Which means that they contain data which can come in several forms. Examples of data that can be contained within objects include fields () often known as attributes) and code (often known as methods). Conversly functional programming is a programming style that focuses on computation as the evaluation of mathematical functions.  Unlike OOP funcational programming avoids the use of objects which feature changing-state and mutable data.
 
 4. What is the difference between a Float and an Integer in Ruby?
 
@@ -42,7 +38,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer: The return of a block of code?
 
-  Researched answer: Any statement in Ruby returns a value of the last evaluated expression. There is no need for return keys.
+  Researched answer: This means that Ruby returns a value of the last expression that was evaluated. Additionally this means that there is no need for return keys.
 
 
 
@@ -54,6 +50,6 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. Ruby on Rails:Ruby on Rails is an open-source software used to build web applications. Rails is a framework used to create websites using the general-purpose programming language Ruby. Ruby ranks amongst the top ten programming languages predominantly because of the voguishness of Rails.
 
-4. ORM: this stands for  Object-Relational Mapping and is a programming way to converting data between relational database, and object oriented programming language.
+4. ORM: this stands for Object-Relational Mapping and is a programming way to converting data between relational database, and object oriented programming language.
 
 5. Active Record:An ORM that interacts with a database using a specific language. It it constantly putting data in objects to be recalled at a later time. It allows for large amounts of data to be recalled easily.
